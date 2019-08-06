@@ -377,7 +377,7 @@ public class ImapAssertion extends DSLAssertion<ImapWrapper>
     private boolean isMessagePresent(FileModel file) throws MessagingException
     {
         for (Message message : getProtocol().usingSearchResults())
-            if (message.getSubject().equals(String.format("%s.%s", file.getName(), file.getFileType().extension)))
+            if (message.getSubject().equals(file.getName()))
                 return true;
         return false;
     }
