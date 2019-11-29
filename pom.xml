@@ -22,7 +22,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <tas.utility.version>3.0.14</tas.utility.version>
         <commons-net.version>3.3</commons-net.version>
-        <javax.mail.version>1.5.1</javax.mail.version>
+        <javax.mail.version>1.6.2</javax.mail.version>
         <java.version>11</java.version>
     </properties>
 
