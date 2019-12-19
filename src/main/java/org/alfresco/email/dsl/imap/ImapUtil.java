@@ -70,7 +70,7 @@ public class ImapUtil {
             BodyPart part = multipart.getBodyPart(i);
             content += part.getContent().toString();
         }
-        if (content == "")
+        if (content.equals(""))
         {
             IOException ioe = new IOException("No content");
             throw ioe;
