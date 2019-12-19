@@ -6,6 +6,8 @@ import org.alfresco.utility.Utility;
 import org.alfresco.utility.model.ContentModel;
 import org.slf4j.Logger;
 
+import java.io.IOException;
+
 import javax.mail.*;
 
 public class ImapUtil {
@@ -63,9 +65,15 @@ public class ImapUtil {
     {
         Multipart multipart = (Multipart) message.getContent();
         String content = "";
-        for (int i = 0; i < multipart.getCount(); i++) {
+        for (int i = 0; i < multipart.getCount(); i++) 
+        {
             BodyPart part = multipart.getBodyPart(i);
             content += part.getContent().toString();
+        }
+        if (content == "")
+        {
+            IOException ioe = new IOException("No content");
+            throw ioe;
         }
         return content;
     }
