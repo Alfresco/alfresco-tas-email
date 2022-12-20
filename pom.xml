@@ -5,7 +5,7 @@
     <groupId>org.alfresco.tas</groupId>
     <artifactId>email</artifactId>
     <name>alfresco-tas-email</name>
-    <version>1.13-SNAPSHOT</version>
+    <version>1.13</version>
     <description>TAS - Internet Message Access Protocol (IMAP) and Simple Mail Transfer Protocol (SMTP)</description>
     <parent>
         <groupId>org.alfresco</groupId>
@@ -30,7 +30,7 @@
         <connection>scm:git:https://github.com/Alfresco/alfresco-tas-email.git</connection>
         <developerConnection>scm:git:https://github.com/Alfresco/alfresco-tas-email.git</developerConnection>
         <url>https://github.com/Alfresco/alfresco-tas-email</url>
-        <tag>HEAD</tag>
+        <tag>v1.13</tag>
     </scm>
 
     <issueManagement>
