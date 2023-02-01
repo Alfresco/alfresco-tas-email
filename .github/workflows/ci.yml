@@ -15,4 +15,4 @@ jobs:
       uses: Alfresco/alfresco-build-tools/.github/workflows/build-and-release-maven.yml@feature/ACS-4456_experimental-reusable-workflow
       secrets: inherit
       with:
-        release-branches: "^release/.+$"
+        auto-release: false
