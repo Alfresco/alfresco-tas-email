@@ -16,3 +16,4 @@ jobs:
       secrets: inherit
       with:
         auto-release: false
+        release-branches: "^release/.+$"
