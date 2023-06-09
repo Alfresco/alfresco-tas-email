@@ -8,7 +8,7 @@ import org.slf4j.Logger;
 
 import java.io.IOException;
 
-import javax.mail.*;
+import jakarta.mail.*;
 
 public class ImapUtil {
     private ImapWrapper imapProtocol;

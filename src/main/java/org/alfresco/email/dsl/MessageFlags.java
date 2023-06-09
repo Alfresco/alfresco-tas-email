@@ -4,12 +4,12 @@ import static org.alfresco.utility.report.log.Step.STEP;
 
 import org.alfresco.email.ImapWrapper;
 
-import javax.mail.Flags;
-import javax.mail.Message;
-import javax.mail.MessagingException;
+import jakarta.mail.Flags;
+import jakarta.mail.Message;
+import jakarta.mail.MessagingException;
 
 /**
- * DSL pertaining only to {@link javax.mail.Message} flags
+ * DSL pertaining only to {@link jakarta.mail.Message} flags
  */
 public class MessageFlags
 {
