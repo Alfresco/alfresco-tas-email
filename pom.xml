@@ -24,7 +24,7 @@
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <maven.build.sourceVersion>${java.version}</maven.build.sourceVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <tas.utility.version>4.0.4-SNAPSHOT</tas.utility.version>
+        <tas.utility.version>4.0.5-SNAPSHOT</tas.utility.version>
         <commons-net.version>3.9.0</commons-net.version>
         <dependency.jakarta-ee-mail.version>2.0.1</dependency.jakarta-ee-mail.version>
         <dependency.jakarta-ee-activation.version>2.0.1</dependency.jakarta-ee-activation.version>
