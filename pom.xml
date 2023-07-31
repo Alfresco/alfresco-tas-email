@@ -5,7 +5,7 @@
     <groupId>org.alfresco.tas</groupId>
     <artifactId>email</artifactId>
     <name>alfresco-tas-email</name>
-    <version>1.23-SNAPSHOT</version>
+    <version>1.25-SNAPSHOT</version>
     <description>TAS - Internet Message Access Protocol (IMAP) and Simple Mail Transfer Protocol (SMTP)</description>
     <parent>
         <groupId>org.alfresco</groupId>
@@ -130,7 +130,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>3.4.4</version>
+                <version>3.4.5</version>
                 <reportSets>
                     <reportSet>
                         <reports>
