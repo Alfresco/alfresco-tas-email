@@ -4,10 +4,10 @@ import static org.alfresco.utility.report.log.Step.STEP;
 
 import java.util.Properties;
 
-import javax.mail.Authenticator;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
-import javax.mail.Transport;
+import jakarta.mail.Authenticator;
+import jakarta.mail.PasswordAuthentication;
+import jakarta.mail.Session;
+import jakarta.mail.Transport;
 
 import org.alfresco.email.dsl.JmxUtil;
 import org.alfresco.email.dsl.smtp.ComposeMessage;
@@ -73,7 +73,7 @@ public class SmtpWrapper extends DSLProtocol<SmtpWrapper>
             new Authenticator()
             {
             };
-            session = Session.getInstance(props, new javax.mail.Authenticator()
+            session = Session.getInstance(props, new jakarta.mail.Authenticator()
             {
                 protected PasswordAuthentication getPasswordAuthentication()
                 {
@@ -118,7 +118,7 @@ public class SmtpWrapper extends DSLProtocol<SmtpWrapper>
             new Authenticator()
             {
             };
-            session = Session.getInstance(props, new javax.mail.Authenticator()
+            session = Session.getInstance(props, new jakarta.mail.Authenticator()
             {
                 protected PasswordAuthentication getPasswordAuthentication()
                 {

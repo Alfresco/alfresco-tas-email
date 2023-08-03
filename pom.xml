@@ -5,7 +5,7 @@
     <groupId>org.alfresco.tas</groupId>
     <artifactId>email</artifactId>
     <name>alfresco-tas-email</name>
-    <version>1.25-SNAPSHOT</version>
+    <version>2.0.0-SNAPSHOT</version>
     <description>TAS - Internet Message Access Protocol (IMAP) and Simple Mail Transfer Protocol (SMTP)</description>
     <parent>
         <groupId>org.alfresco</groupId>
@@ -24,9 +24,11 @@
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <maven.build.sourceVersion>${java.version}</maven.build.sourceVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <tas.utility.version>4.0.4</tas.utility.version>
+        <tas.utility.version>5.0.0</tas.utility.version>
         <commons-net.version>3.9.0</commons-net.version>
-        <javax.mail.version>1.6.2</javax.mail.version>
+        <dependency.jakarta-ee-mail.version>2.0.1</dependency.jakarta-ee-mail.version>
+        <dependency.jakarta-ee-activation.version>2.0.1</dependency.jakarta-ee-activation.version>
+
     </properties>
 
     <scm>
@@ -104,15 +106,22 @@
         </dependency>
 
         <dependency>
-            <groupId>javax.mail</groupId>
-            <artifactId>javax.mail-api</artifactId>
-            <version>${javax.mail.version}</version>
+            <groupId>jakarta.mail</groupId>
+            <artifactId>jakarta.mail-api</artifactId>
+            <version>${dependency.jakarta-ee-mail.version}</version>
+            <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>com.sun.mail</groupId>
-            <artifactId>javax.mail</artifactId>
-            <version>${javax.mail.version}</version>
+            <artifactId>jakarta.mail</artifactId>
+            <version>${dependency.jakarta-ee-mail.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.activation</groupId>
+            <artifactId>jakarta.activation-api</artifactId>
+            <version>${dependency.jakarta-ee-activation.version}</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 

@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.mail.*;
+import jakarta.mail.*;
 
 import org.alfresco.email.ImapWrapper;
 import org.alfresco.utility.TasProperties;
