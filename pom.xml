@@ -25,7 +25,7 @@
         <maven.build.sourceVersion>${java.version}</maven.build.sourceVersion>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <tas.utility.version>5.0.0</tas.utility.version>
-        <commons-net.version>3.9.0</commons-net.version>
+        <commons-net.version>3.10.0</commons-net.version>
         <dependency.jakarta-ee-mail.version>2.0.1</dependency.jakarta-ee-mail.version>
         <dependency.jakarta-ee-activation.version>2.0.1</dependency.jakarta-ee-activation.version>
 
